@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A69C9C"
+    tools:context=".MainMenuFragment" >
+
+    <Button
+        android:id="@+id/btCreateGame"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#351212"
+        android:text="@string/create_game"
+        android:textColor="#FFFAFA"
+        app:cornerRadius="7dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.7" />
+
+    <Button
+        android:id="@+id/btSettings"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#351212"
+        android:text="@string/settings"
+        android:textColor="#FFFAFA"
+        app:cornerRadius="7dp"
+        app:layout_constraintEnd_toEndOf="@+id/btCreateGame"
+        app:layout_constraintStart_toStartOf="@+id/btCreateGame"
+        app:layout_constraintTop_toBottomOf="@+id/btCreateGame" />
+
+    <Button
+        android:id="@+id/btRules"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#351212"
+        android:text="@string/rules"
+        android:textColor="#FFFAFA"
+        app:cornerRadius="7dp"
+        app:layout_constraintEnd_toEndOf="@+id/btSettings"
+        app:layout_constraintStart_toStartOf="@+id/btSettings"
+        app:layout_constraintTop_toBottomOf="@+id/btSettings" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="349dp"
+        android:layout_height="285dp"
+        android:src="@drawable/spy_log"
+        app:layout_constraintBottom_toTopOf="@+id/btCreateGame"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
