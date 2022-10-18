@@ -3,6 +3,6 @@
     <string name="create_game">Создать игру</string>
     <string name="settings">Параметры</string>
     <string name="rules">Правила игры</string>
-    <string name="spy">spy</string>
+    <string name="spy">Spy</string>
     <string name="hello_oleg">Hello Oleg</string>
 </resources>
