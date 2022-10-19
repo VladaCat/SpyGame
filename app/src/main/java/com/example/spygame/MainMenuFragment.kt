@@ -23,15 +23,9 @@ class MainMenuFragment : Fragment() {
         return binding.root
 
     }
-
+//TODO Make with Cicerone
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val controller = findNavController()
-//        with(binding) {
-//            btCreateGame.setOnClickListener { controller.navigate(R.id.createGameFragment) }
-//            btSettings.setOnClickListener { controller.navigate(R.id.settingsFragment) }
-//            btRules.setOnClickListener { controller.navigate(R.id.rulesFragment) }
-//        }
     }
 
 }
