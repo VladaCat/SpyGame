@@ -1,12 +1,12 @@
-package com.example.spygame.fragments_rules
+package com.example.spygame.rules.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.spygame.R
 import com.example.spygame.databinding.FragmentSlideBinding
+import com.example.spygame.rules.VpAdapter
 import com.google.android.material.tabs.TabLayoutMediator
 
 class SlideFragment : Fragment() {

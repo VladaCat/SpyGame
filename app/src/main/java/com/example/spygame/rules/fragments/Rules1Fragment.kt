@@ -1,4 +1,4 @@
-package com.example.spygame.fragments_rules
+package com.example.spygame.rules.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.spygame.R
 
-class Rules3Fragment : Fragment() {
+class Rules1Fragment : Fragment() {
 
 
     override fun onCreateView(
@@ -15,12 +15,12 @@ class Rules3Fragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_rules3, container, false)
+        return inflater.inflate(R.layout.fragment_rules1, container, false)
     }
 
     companion object {
 
         @JvmStatic
-        fun newInstance() = Rules3Fragment()
+        fun newInstance() = Rules1Fragment()
     }
     }

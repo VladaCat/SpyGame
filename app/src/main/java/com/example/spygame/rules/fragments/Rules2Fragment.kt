@@ -1,4 +1,4 @@
-package com.example.spygame.fragments_rules
+package com.example.spygame.rules.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

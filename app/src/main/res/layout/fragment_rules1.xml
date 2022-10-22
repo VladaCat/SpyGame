@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#351212"
-    tools:context=".fragments_rules.Rules1Fragment">
+    tools:context=".rules.fragments.Rules1Fragment">
 
     <TextView
         android:id="@+id/textView"
