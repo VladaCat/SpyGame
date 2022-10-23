@@ -1,4 +1,4 @@
-package com.example.spygame.presentation.ui
+package com.example.spygame.presentation.ui.instruction
 
 import com.example.spygame.R
 import com.example.spygame.core.action.BaseFragment

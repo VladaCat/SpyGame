@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#A69C9C"
-    tools:context=".presentation.ui.MainMenuFragment" >
+    tools:context=".presentation.ui.menu.MainMenuFragment" >
 
     <Button
         android:id="@+id/btCreateGame"
