@@ -1,4 +1,6 @@
 package com.example.spygame.presentation.view_model.instruction
 
-class InstructionViewModel {
+import com.example.spygame.core.action.BaseViewModel
+
+abstract class InstructionViewModel: BaseViewModel() {
 }

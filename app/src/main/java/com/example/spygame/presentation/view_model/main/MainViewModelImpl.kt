@@ -7,4 +7,8 @@ internal class MainViewModelImpl(private val mainLocalCoordinator: MainLocalCoor
     override fun startMenuScreen() {
         mainLocalCoordinator.startMenuScreen()
     }
+
+    override fun startInstructionScreen() {
+        mainLocalCoordinator.startInstructionScreen()
+    }
 }
