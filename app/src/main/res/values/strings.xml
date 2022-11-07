@@ -5,4 +5,5 @@
     <string name="rules">Правила гри</string>
     <string name="spy">Spy</string>
     <string name="hello_oleg">Hello Oleg</string>
+    <string name="instructions">Instructions</string>
 </resources>
