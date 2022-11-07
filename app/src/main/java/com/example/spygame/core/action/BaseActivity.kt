@@ -5,21 +5,24 @@ import androidx.annotation.LayoutRes
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
+import com.example.spygame.presentation.navigation.dialog_navigator.DialogNavigator
+import com.github.terrakok.cicerone.NavigatorHolder
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.onEach
+import org.koin.android.ext.android.inject
 
 abstract class BaseActivity<B : ViewDataBinding>(
     @LayoutRes private val layoutId: Int
 ) : AppCompatActivity(), ActivityActions {
-    //private val navigatorHolder by inject<NavigatorHolder>()
+    private val navigatorHolder by inject<NavigatorHolder>()
     private var viewBinding: B? = null
-
+    protected abstract val navigator: DialogNavigator
 
     protected val binding: B
         get() = viewBinding
             ?: throw IllegalStateException("Trying to access the binding outside of the view lifecycle.")
 
-    abstract fun initUI()
+    open fun initUI() {}
 
     open fun initCollectors() {
         // This function is meant to be overridden by an inheritor
@@ -47,11 +50,11 @@ abstract class BaseActivity<B : ViewDataBinding>(
 
     override fun onResumeFragments() {
         super.onResumeFragments()
-        //navigatorHolder.setNavigator(navigator)
+        navigatorHolder.setNavigator(navigator)
     }
 
     override fun onPause() {
-       //navigatorHolder.removeNavigator()
+        navigatorHolder.removeNavigator()
         super.onPause()
     }
 
@@ -73,13 +76,13 @@ abstract class BaseActivity<B : ViewDataBinding>(
     }
 
     override fun onBackPressed() {
-//        val fragment = supportFragmentManager.findFragmentById(navigator.containerLayoutId)
-//        if (fragment != null && fragment is BackButtonListener &&
-//            (fragment as BackButtonListener).onBackPressed()
-//        ) {
-//            return
-//        } else {
-//            super.onBackPressed()
-//        }
+        val fragment = supportFragmentManager.findFragmentById(navigator.containerLayoutId)
+        if (fragment != null && fragment is BackButtonListener &&
+            (fragment as BackButtonListener).onBackPressed()
+        ) {
+            return
+        } else {
+            super.onBackPressed()
+        }
     }
 }
