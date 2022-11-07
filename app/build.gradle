@@ -7,7 +7,7 @@ android {
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.plantinmini"
+        applicationId "com.example.spygame"
         minSdk 26
         targetSdk 31
         versionCode 1
@@ -52,7 +52,6 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
     implementation "androidx.recyclerview:recyclerview:1.2.1"
-    implementation "androidx.cardview:cardview:1.0.0"
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 
     implementation 'androidx.navigation:navigation-fragment-ktx:2.5.2'

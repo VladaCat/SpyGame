@@ -1,4 +1,4 @@
-package com.example.spygame.presentation.view_model.instruction
+package com.example.spygame.presentation.ui.instruction
 
 import com.example.spygame.core.action.BaseViewModel
 

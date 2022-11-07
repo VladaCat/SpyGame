@@ -1,9 +1,10 @@
-package com.example.spygame.core.util
+package com.example.spygame.presentation.navigation.base
 
 import androidx.fragment.app.*
 import com.example.spygame.R
 import com.github.terrakok.cicerone.androidx.AppNavigator
 import com.github.terrakok.cicerone.androidx.FragmentScreen
+
 
 open class CoreNavigator(
     activity: FragmentActivity,

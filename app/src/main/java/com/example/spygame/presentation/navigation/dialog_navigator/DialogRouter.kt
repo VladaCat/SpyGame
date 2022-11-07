@@ -1,4 +1,4 @@
-package com.example.spygame.data.di.navigation.dialog_navigation
+package com.example.spygame.presentation.navigation.dialog_navigator
 
 import com.github.terrakok.cicerone.Command
 import com.github.terrakok.cicerone.Router

@@ -1,11 +1,11 @@
-package com.example.spygame.data.di.navigation.dialog_navigation
+package com.example.spygame.presentation.navigation.dialog_navigator
 
 import androidx.fragment.app.DialogFragment
 import androidx.fragment.app.FragmentActivity
 import androidx.fragment.app.FragmentFactory
 import androidx.fragment.app.FragmentManager
-import com.example.spygame.core.util.CoreNavigator
 import com.github.terrakok.cicerone.Command
+import com.example.spygame.presentation.navigation.base.CoreNavigator
 
 open class DialogNavigator(
     activity: FragmentActivity,
