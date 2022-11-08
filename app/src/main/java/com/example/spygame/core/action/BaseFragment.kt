@@ -13,7 +13,7 @@ import kotlinx.coroutines.delay
 
 @Suppress("TooManyFunctions")
 abstract class BaseFragment<B : ViewDataBinding>(private val layoutId: Int) : Fragment() {
-    protected val binding: B
+    protected open val binding: B
         get() = viewBinding
             ?: throw IllegalStateException("Trying to access the binding outside of the view lifecycle.")
 
