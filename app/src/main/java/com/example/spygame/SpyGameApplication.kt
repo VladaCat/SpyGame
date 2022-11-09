@@ -1,4 +1,4 @@
-package com.example.spygame.presentation
+package com.example.spygame
 
 import android.app.Application
 import com.example.spygame.di.appComponent
