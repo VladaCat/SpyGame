@@ -6,7 +6,7 @@ import com.example.spygame.databinding.FragmentInstructionBinding
 import com.example.spygame.presentation.ui.first_instruction_page.FirstInstructionPage
 import com.example.spygame.presentation.ui.second_instruction_page.SecondInstructionPage
 import com.example.spygame.presentation.ui.third_instruction_page.ThirdInstructionPage
-import com.example.spygame.rules.VpAdapter
+import com.example.spygame.presentation.ui.VpAdapter
 import com.google.android.material.tabs.TabLayoutMediator
 import org.koin.androidx.viewmodel.ext.android.viewModel
 

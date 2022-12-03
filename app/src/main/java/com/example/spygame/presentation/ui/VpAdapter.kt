@@ -1,4 +1,4 @@
-package com.example.spygame.rules
+package com.example.spygame.presentation.ui
 
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.adapter.FragmentStateAdapter
