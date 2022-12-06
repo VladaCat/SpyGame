@@ -1,5 +1,6 @@
 package com.example.spygame.presentation.ui.instruction
 
+import androidx.navigation.findNavController
 import com.example.spygame.R
 import com.example.spygame.core.action.BaseFragment
 import com.example.spygame.databinding.FragmentInstructionBinding
@@ -14,6 +15,7 @@ class InstructionFragment :
     BaseFragment<FragmentInstructionBinding>(R.layout.fragment_instruction) {
 
     private val viewModel by viewModel<InstructionViewModel>()
+
 
     private val fragList = listOf(
         FirstInstructionPage.createInstance(),
